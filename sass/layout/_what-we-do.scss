@@ -1,4 +1,13 @@
-.what-we-do-list{
+.section-what-we-do {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .section-what-we-do{
+        display: block;
+        padding-top: 0;
+    }
+    .what-we-do-list{
     display: flex;
     margin-left: -30px;
     margin-top: -30px;
@@ -24,3 +33,7 @@
     color: var(--main-light-color);
     background-color: var(--background-above-img);
 }
+}
+
+
+

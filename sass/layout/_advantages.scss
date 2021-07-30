@@ -1,6 +1,3 @@
-.advantages__item:not(:last-child) {
-    margin-bottom: 30px;
-}
 .advantages__icon {
     display: flex;
     justify-content: center;
@@ -26,9 +23,16 @@
 
 }
 
+@media screen and (min-width: 480px) and (max-width:767px) {
+    .advantages__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .advantages{
         display: flex;
+        flex-wrap: wrap;
         margin-top: -30px;
         margin-left: -30px;
     }
@@ -40,6 +44,25 @@
     }
     .advantages__icon{
         width: 354px;
+        height: 120px;
+    }
+    .advantages__title{
+        text-align: unset;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .advantages {
+        flex-wrap: nowrap;
+    }
+
+    .advantages__item{
+        width: 270px;
+        height: 251px;
+    }
+    .advantages__icon{
+        width: 270px;
         height: 120px;
     }
 }
