@@ -20,6 +20,12 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+        fill: var(--accent-color);
+    }
 }
 
 
@@ -91,7 +97,12 @@
      .mail-tel__link { 
        display: flex;
        align-items: center;
-    color: var(--secondary-color);
+       color: var(--secondary-color);
+       &:hover,
+       &:focus{
+           color: var(--accent-color);
+           fill: var(--accent-color);
+       }
     }
 
     .mail-tel__icon-mail,
@@ -153,13 +164,7 @@
     letter-spacing: 0.02em;
 
     color: var(--main-color);
-    transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
-
-    &:hover,
-    &:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-    }
+    
 
     &.current {
     position: relative;
@@ -172,13 +177,6 @@
     letter-spacing: 0.02em;
 
     color: var(--main-color);
-    transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
-
-    &:hover,
-    &:focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
-    }
 
 }
 
