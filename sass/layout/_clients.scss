@@ -8,11 +8,13 @@
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
+    flex-basis: calc((100% - 1 * 30px) / 2);
 }
 
 .clients-list__item{
     margin-top: 30px;
     margin-left: 30px;
+    
 }
 
 .clients-list__link{
@@ -25,11 +27,22 @@
     border: 1px solid var(--clients-color);
     border-radius: 4px;
     border-color: var(--clients-color);
+    transition: border 250ms var(--timing-function);
+
+    &:hover,
+    &:focus{
+    border: 1px solid var(--accent-color);
+    }
 }
 
 .clients-list__icon{
     fill: currentColor;
+    .clients-list__link:hover &,
+    .clients-list__link:focus &{
+    fill: var(--accent-color);
+     }
 }
+
 
 @media screen and (min-width: 768px) {
     .clients-list__link{
