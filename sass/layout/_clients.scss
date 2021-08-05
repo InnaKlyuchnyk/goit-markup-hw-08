@@ -8,20 +8,20 @@
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
-    flex-basis: calc((100% - 30px) / 2);
+    
 }
 
 .clients-list__item{
     margin-top: 30px;
     margin-left: 30px;
-    
+    flex-basis: calc((100% - 60px) / 2);
 }
 
 .clients-list__link{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 210px;
+    max-width: 210px;
     height: 92px;
     color: var(--clients-color);
     border: 1px solid var(--clients-color);
@@ -45,8 +45,11 @@
 
 
 @media screen and (min-width: 768px) {
+    .clients-list__item{
+        flex-basis: calc((100% - 90px) / 3);
+    }
     .clients-list__link{
-    width: 226px;
+    max-width: 226px;
     height: 92px;
     }
 }

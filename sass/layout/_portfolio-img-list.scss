@@ -55,7 +55,7 @@
     color: var(--main-light-color);
     background: var(--overlay-background);
     overflow: auto;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms var(--timing-function);
 
     .portf-img-list__link:hover &,

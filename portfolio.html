@@ -22,9 +22,9 @@
         <div class="container header-container">
             <nav class="navigation">
                 <a href="./" lang="en" class="logo link"><span class="logo_part">Web</span>Studio</a>
-                <button class="menu-button">
-                    <svg class="icon header__menu-icon" width="24" height="16">
-                        <use href="./images/icons.svg#icon-menu"></use>
+                <button class="menu-button" data-menu-open>
+                    <svg class="icon header__menu-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-menu-burger"></use>
                     </svg>
                 </button>
                     
@@ -60,6 +60,50 @@
                 </li>
             </ul>
         </div>
+                <div class="mobile-menu" data-menu>
+                    <div class="container mobile-menu__container">
+                        <button class="mobile-menu__close-btn" data-menu-close>
+                            <svg class="icon mobile-menu__close-icon" width="40" height="40">
+                                <use href="./images/icons.svg#icon-close-btn"></use>
+                            </svg>
+                        </button>
+                        <ul class="list mobile-menu__list">
+                            <li class="mobile-menu__list_item">
+                                <a href="./index.html" class="link mobile-menu__list_link">Студия</a>
+                            </li>
+                            <li class="mobile-menu__list_item">
+                                <a href="" class="link mobile-menu__list_link">Портфолио</a>
+                            </li>
+                            <li class="mobile-menu__list_item">
+                                <a href="" class="link mobile-menu__list_link">Контакты</a>
+                            </li>
+                        </ul>
+                        <ul class="list mobile-menu__contact-list">
+                            <li class="mobile-menu__contact-list_item">
+                                <a href="" class="link mobile-menu__contact-list_link">+38 096 111 11 11</a>
+                            </li>
+                
+                            <li class="mobile-menu__contact-list_item">
+                                <a href="" class="link mobile-menu__contact-list_link mobile-menu__mail">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="list mobile-menu__social-list">
+                            <li class="mobile-menu__social-list_item">
+                                <a href="" class="link mobile-menu__social-list_link">Instagram</a>
+                            </li>
+                            <li class="mobile-menu__social-list_item">
+                                <a href="" class="link mobile-menu__social-list_link">Twitter</a>
+                            </li>
+                            <li class="mobile-menu__social-list_item">
+                                <a href="" class="link mobile-menu__social-list_link">Facebook</a>
+                            </li>
+                            <li class="mobile-menu__social-list_item">
+                                <a href="" class="link mobile-menu__social-list_link">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                </div>
 
     </header>
 
@@ -101,7 +145,7 @@
                                     <source media="(min-width: 480px)"
                                         srcset="./images/portfolio/mobile/prtf_img1_mobile.webp 1x, ./images/portfolio/mobile/prtf_img1_mobile@2x.webp 2x" type="image/webp">
 
-                                    <img src="#" alt="Ноутбук и три анкеты" class="portf-img">
+                                    <img src="./images/portfolio/mobile/prtf_img1_mobile@2x.jpg" alt="Ноутбук и три анкеты" class="portf-img">
                                 </picture>
                                 
                                 <p class="overlay-box__overlay">
@@ -140,7 +184,7 @@
                                         srcset="./images/portfolio/mobile/prtf_img2_mobile.webp 1x, ./images/portfolio/mobile/prtf_img2_mobile@2x.webp 2x"
                                         type="image/webp">
 
-                                    <img src="#" alt="Баскетбол" class="portf-img">
+                                    <img src="./images/portfolio/mobile/prtf_img2_mobile@2x.jpg" alt="Баскетбол" class="portf-img">
 
 
                                 </picture>
@@ -181,7 +225,7 @@
                                         srcset="./images/portfolio/mobile/prtf_img3_mobile.webp 1x, ./images/portfolio/mobile/prtf_img3_mobile@2x.webp 2x"
                                         type="image/webp">
 
-                                    <img src="#" alt="Ресторан морепродуктов" class="portf-img">
+                                    <img src="./images/portfolio/mobile/prtf_img3_mobile@2x.jpg" alt="Ресторан морепродуктов" class="portf-img">
                                 </picture>
                                 
                                 <p class="overlay-box__overlay">
@@ -222,7 +266,7 @@
                                         type="image/webp">
 
                                     
-                                    <img src="#" alt="Наушники" class="portf-img">
+                                    <img src="./images/portfolio/mobile/prtf_img4_mobile@2x.jpg" alt="Наушники" class="portf-img">
                                 </picture>
                                 
                                 <p class="overlay-box__overlay">
@@ -262,7 +306,7 @@
                                         srcset="./images/portfolio/mobile/prtf_img5_mobile.webp 1x, ./images/portfolio/mobile/prtf_img5_mobile@2x.webp 2x"
                                         type="image/webp">
 
-                                    <img src="#" alt="Две коробки" class="portf-img">
+                                    <img src="./images/portfolio/mobile/prtf_img5_mobile@2x.jpg" alt="Две коробки" class="portf-img">
                                 </picture>
                                 
                                 <p class="overlay-box__overlay">
@@ -301,7 +345,7 @@
                                         srcset="./images/portfolio/mobile/prtf_img6_mobile.webp 1x, ./images/portfolio/mobile/prtf_img6_mobile@2x.webp 2x"
                                         type="image/webp">
 
-                                    <img src="#" alt="Монитор" class="portf-img">
+                                    <img src="./images/portfolio/mobile/prtf_img6_mobile@2x.jpg" alt="Монитор" class="portf-img">
                                 </picture>
                                 
                                 <p class="overlay-box__overlay">
@@ -341,7 +385,7 @@
                                         srcset="./images/portfolio/mobile/prtf_img7_mobile.webp 1x, ./images/portfolio/mobile/prtf_img7_mobile@2x.webp 2x"
                                         type="image/webp">
 
-                                    <img src="#" alt="Открытая книга" class="portf-img">
+                                    <img src="./images/portfolio/mobile/prtf_img7_mobile@2x.jpg" alt="Открытая книга" class="portf-img">
                                 </picture>
                                 
                                 <p class="overlay-box__overlay">
@@ -381,7 +425,7 @@
                                         srcset="./images/portfolio/mobile/prtf_img8_mobile.webp 1x, ./images/portfolio/mobile/prtf_img8_mobile@2x.webp 2x"
                                         type="image/webp">
 
-                                    <img src="#" alt="Карточка брелок" class="portf-img">
+                                    <img src="./images/portfolio/mobile/prtf_img8_mobile@2x.jpg" alt="Карточка брелок" class="portf-img">
                                 </picture>
                                 
                                 <p class="overlay-box__overlay">
@@ -421,7 +465,7 @@
                                         srcset="./images/portfolio/mobile/prtf_img9_mobile.webp 1x, ./images/portfolio/mobile/prtf_img9_mobile@2x.webp 2x"
                                         type="image/webp">
 
-                                    <img src="#" alt="Работа за ноутбуком" class="portf-img">
+                                    <img src="./images/portfolio/mobile/prtf_img9_mobile@2x.jpg" alt="Работа за ноутбуком" class="portf-img">
                                 </picture>
                                 
                                 <p class="overlay-box__overlay">
@@ -518,6 +562,7 @@
         </div>
 
     </footer>
+    <script src="./js/munu.js"></script>
 </body>
 
 </html>

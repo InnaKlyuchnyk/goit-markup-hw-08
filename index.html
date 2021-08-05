@@ -23,9 +23,9 @@
         <div class="container header-container">
             <nav class="navigation">
                     <a href="./" lang="en" class="logo link"> <span class="logo_part">Web</span>Studio</a>
-                    <button class="menu-button">
-                        <svg class="icon header__menu-icon" width="24" height="16">
-                            <use href="./images/icons.svg#icon-menu"></use>
+                    <button class="menu-button" data-menu-open>
+                        <svg class="icon header__menu-icon" width="40" height="40">
+                            <use href="./images/icons.svg#icon-menu-burger"></use>
                         </svg>
                     </button>
                         
@@ -61,6 +61,53 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="icon mobile-menu__close-icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-close-btn"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu-all-lists">
+                                    <ul class="list mobile-menu__list">
+                                        <li class="mobile-menu__list_item">
+                                            <a href="" class="link mobile-menu__list_link">Студия</a>
+                                        </li>
+                                        <li class="mobile-menu__list_item">
+                                            <a href="./portfolio.html" class="link mobile-menu__list_link">Портфолио</a>
+                                        </li>
+                                        <li class="mobile-menu__list_item">
+                                            <a href="" class="link mobile-menu__list_link">Контакты</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list mobile-menu__contact-list">
+                                        <li class="mobile-menu__contact-list_item">
+                                            <a href="" class="link mobile-menu__contact-list_link">+38 096 111 11 11</a>
+                                        </li>
+                                    
+                                        <li class="mobile-menu__contact-list_item">
+                                            <a href="" class="link mobile-menu__contact-list_link mobile-menu__mail">info@devstudio.com</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list mobile-menu__social-list">
+                                        <li class="mobile-menu__social-list_item">
+                                            <a href="" class="link mobile-menu__social-list_link">Instagram</a>
+                                        </li>
+                                        <li class="mobile-menu__social-list_item">
+                                            <a href="" class="link mobile-menu__social-list_link">Twitter</a>
+                                        </li>
+                                        <li class="mobile-menu__social-list_item">
+                                            <a href="" class="link mobile-menu__social-list_link">Facebook</a>
+                                        </li>
+                                        <li class="mobile-menu__social-list_item">
+                                            <a href="" class="link mobile-menu__social-list_link">LinkedIn</a>
+                                        </li>
+                                    </ul>
+                </div>
+
+            </div>
+            
         </div>
 
     </header>
@@ -141,7 +188,7 @@
                             <source media="(min-width: 1200px)" srcset="./images/what_we_do/desktop/box1_img.jpg 1x, ./images/what_we_do/desktop/box1_img@2x.jpg 2x">
                             <source media="(min-width: 1200px)" srcset="./images/what_we_do/desktop/box1_img.webp 1x, ./images/what_we_do/desktop/box1_img@2x.webp 2x" type="image/webp">
 
-                            <img src="#" alt="Руки на клавиатуре">
+                            <img src="./images/what_we_do/desktop/box1_img.jpg" alt="Руки на клавиатуре">
                         </picture>
                         
                         <p class="what-we-do-list__description">Десктопные приложения</p>
@@ -152,7 +199,7 @@
                             <source media="(min-width: 1200px)" srcset="./images/what_we_do/desktop/box2_img.jpg 1x, ./images/what_we_do/desktop/box2_img@2x.jpg 2x">
                             <source media="(min-width: 1200px)" srcset="./images/what_we_do/desktop/box2_img.webp 1x, ./images/what_we_do/desktop/box2_img@2x.webp 2x" type="image/webp">
                                 
-                            <img src="#" alt="Ноутбук и телефон">
+                            <img src="./images/what_we_do/desktop/box2_img.jpg" alt="Ноутбук и телефон">
                         </picture>
                         
                         <p class="what-we-do-list__description">Мобильные приложения</p>
@@ -163,7 +210,7 @@
                             <source media="(min-width: 1200px)" srcset="./images/what_we_do/desktop/box3_img.jpg 1x, ./images/what_we_do/desktop/box3_img@2x.jpg 2x">
                             <source media="(min-width: 1200px)" srcset="./images/what_we_do/desktop/box3_img.webp 1x, ./images/what_we_do/desktop/box3_img@2x.webp 2x" type="image/webp">
                                 
-                            <img src="#" alt="Планшет с узором">
+                            <img src="./images/what_we_do/desktop/box3_img.jpg" alt="Планшет с узором">
                         </picture>
                         
                         <p class="what-we-do-list__description">Дизайнерские решения</p>
@@ -190,7 +237,7 @@
                             <source media="(min-width: 480px)" srcset="./images/our_team/mobile/team1.jpg 1x, ./images/our_team/mobile/team1@2x.jpg 2x">
                             <source media="(min-width: 480px)" srcset="./images/our_team/mobile/team1.webp 1x, ./images/our_team/mobile/team1@2x.webp 2x" type="image/webp">
 
-                            <img src="#" alt="Игорь Демьяненко">
+                            <img src="./images/our_team/mobile/team1@2x.jpg" alt="Игорь Демьяненко">
                         </picture>
                         
                         <div class="team-img-description">
@@ -242,7 +289,7 @@
                             <source media="(min-width: 480px)" srcset="./images/our_team/mobile/team2.jpg 1x, ./images/our_team/mobile/team2@2x.jpg 2x">
                             <source media="(min-width: 480px)" srcset="./images/our_team/mobile/team2.webp 1x, ./images/our_team/mobile/team2@2x.webp 2x" type="image/webp">
 
-                            <img src="#" alt="Ольга Репина">
+                            <img src="./images/our_team/mobile/team2@2x.jpg" alt="Ольга Репина">
                         </picture>
                         
                         <div class="team-img-description">
@@ -293,7 +340,7 @@
                             <source media="(min-width: 480px)" srcset="./images/our_team/mobile/team3.jpg 1x, ./images/our_team/mobile/team3@2x.jpg 2x">
                             <source media="(min-width: 480px)" srcset="./images/our_team/mobile/team3.webp 1x, ./images/our_team/mobile/team3@2x.webp 2x" type="image/webp">
 
-                            <img src="#" alt="Николай Тарасов">
+                            <img src="./images/our_team/mobile/team3@2x.jpg" alt="Николай Тарасов">
                         </picture>
                         
                         <div class="team-img-description">
@@ -345,7 +392,7 @@
                             <source media="(min-width: 480px)" srcset="./images/our_team/mobile/team4.jpg 1x, ./images/our_team/mobile/team4@2x.jpg 2x">
                             <source media="(min-width: 480px)" srcset="./images/our_team/mobile/team4.webp 1x, ./images/our_team/mobile/team4@2x.webp 2x" type="image/webp">
 
-                            <img src="#" alt="Михаил Ермаков">
+                            <img src="./images/our_team/mobile/team4@2x.jpg" alt="Михаил Ермаков">
                         </picture>
                         
                         <div class="team-img-description">
@@ -571,7 +618,8 @@
             </form>
         </div>
     </div>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/munu.js"></script>
 </body>
 
 </html>
