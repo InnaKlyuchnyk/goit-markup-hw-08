@@ -46,6 +46,9 @@
     visibility: hidden;
     pointer-events: none;
 }
+.mobile-menu__list_link.current{
+    color: var(--accent-color);
+}
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -60,6 +63,11 @@
     padding: 0;
     line-height: 0;
     cursor: pointer;
+    transition: fill 250ms var(--timing-function);
+    &:hover,
+    &:focus{
+        fill: var(--accent-color);
+    }
 }
 
 .mobile-menu__list_item{
@@ -109,7 +117,10 @@
     justify-content: space-between;
  
 }
-
+.mobile-menu__social-list_item:not(:last-child){
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);;
+}
 
 @media screen and (min-width: 768px) {
     .header-container{

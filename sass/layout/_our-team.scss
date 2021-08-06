@@ -42,10 +42,21 @@
      height: 44px;
      background: var(--main-light-color);
      border-radius: 50%;
+     transition: background-color 250ms var(--timing-function);
+
+     &:hover,
+     &:focus{
+         background-color: var(--accent-color);
+     }
 }
 
 .team-social-icon {
     fill: var(--clients-color);
+    transition: fill 250ms var(--timing-function);
+    &:hover,
+    &:focus{
+         fill: var(--main-light-color);
+     }
 }
 
 @media screen and (min-width: 480px) and (max-width:767px) {
