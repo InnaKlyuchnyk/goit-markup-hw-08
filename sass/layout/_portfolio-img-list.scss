@@ -1,6 +1,5 @@
 .portf-img-list__item{
     max-width: 450px;
-    height: 404px;
     border: 1px solid #EEEEEE;
     margin-bottom: 30px;
 }
@@ -15,13 +14,13 @@
 }
 .portf-img-list__description{
     padding: 20px 24px;
+    padding-right: 0;
 }
 .portfolio-img-list__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    // width: 322px;
     margin-bottom: 4px;
 
     color:var(--main-color);
@@ -30,7 +29,6 @@
 .portfolio-img-list__text {
     font-size: 16px;
     line-height: 1.87;
-    width: 322px;
 
     color:var(--secondary-color);
 }
@@ -78,12 +76,7 @@
     margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 0;
-    
-}
-.portf-img-list__item:nth-child(-n+2){
-    height: 440px;
-}
-
+    }
 }
 
 @media screen and (min-width:1200px) {

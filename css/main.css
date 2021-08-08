@@ -406,6 +406,13 @@ body {
   pointer-events: none;
 }
 
+.mobile-menu-all-lists {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .mobile-menu__list_link.current {
   color: var(--accent-color);
 }
@@ -445,7 +452,7 @@ body {
 }
 
 .mobile-menu__contact-list {
-  margin-top: 302px;
+  margin-top: auto;
   margin-bottom: 64px;
 }
 
@@ -478,12 +485,11 @@ body {
 
 .mobile-menu__social-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .mobile-menu__social-list_item:not(:last-child) {
-  padding-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -632,7 +638,8 @@ body {
   background: var(--background-color-under-img);
   max-width: 100%;
   text-align: center;
-  padding: 115px 30px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg_img_mobile.jpg");
   background-position: center;
@@ -664,21 +671,30 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 479px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 479px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 479px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg_img_mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg_img_tablet.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 100%;
-    padding: 118px 174px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg_img_tablet.jpg");
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+  .hero .container {
+    width: 400px;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg_img_tablet@2x.jpg");
   }
@@ -686,7 +702,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 100%;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
@@ -701,7 +717,7 @@ body {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/bg_img_desktop@2x.jpg");
   }
@@ -869,7 +885,7 @@ body {
   fill: var(--main-light-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .team-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -994,7 +1010,6 @@ body {
 
 .portf-img-list__item {
   max-width: 450px;
-  height: 404px;
   border: 1px solid #EEEEEE;
   margin-bottom: 30px;
 }
@@ -1010,6 +1025,7 @@ body {
 
 .portf-img-list__description {
   padding: 20px 24px;
+  padding-right: 0;
 }
 
 .portfolio-img-list__title {
@@ -1024,7 +1040,6 @@ body {
 .portfolio-img-list__text {
   font-size: 16px;
   line-height: 1.87;
-  width: 322px;
   color: var(--secondary-color);
 }
 
@@ -1071,9 +1086,6 @@ body {
     margin-top: 30px;
     margin-left: 30px;
     margin-bottom: 0;
-  }
-  .portf-img-list__item:nth-child(-n+2) {
-    height: 440px;
   }
 }
 
